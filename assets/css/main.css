@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+}
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  background: #6495ED;
+  align-items: center;
+  padding: 20px;
+}
+.header nav .home {
+  flex-basis: 10%;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+.header nav .home a {
+  text-decoration: none;
+}
+.header nav .home a i {
+  font-size: 20px;
+  color: #000;
+  background: #60a5fa;
+  padding: 9px 10px 10px 12px;
+  border-radius: 50px;
+}
+.header nav .home a span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin-left: 5px;
+}
+.header nav .home:hover {
+  border: 2px solid #1f59ff;
+  border-radius: 20px;
+  box-shadow: 2px 3px 8px #171717;
+}
+.header nav .image {
+  flex-basis: 10%;
+  text-align: center;
+}
+.header nav .image img {
+  width: 120px;
+}
+.header nav .search-box {
+  flex-basis: 45%;
+  text-align: center;
+  background: #fff;
+  height: 45px;
+  border: 2px solid #1f59ff;
+  box-shadow: inset 1px 0px 8px 2px #93C5FC;
+  border-radius: 50px;
+}
+.header nav .search-box input {
+  width: 90%;
+  outline: none;
+  border: none;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 10px;
+  font-size: 19px;
+  background: transparent;
+}
+.header nav .search-box i {
+  font-size: 20px;
+  padding: 10px 0 0 8px;
+}
+.header nav .search-box:hover {
+  box-shadow: 0px 2px 5px #171717;
+}
+.header nav .microphone {
+  flex-basis: 2%;
+  text-align: center;
+  background: #60a5fa;
+  padding: 9px 13px;
+  border-radius: 50%;
+  margin-left: -24px;
+  border: 2px solid transparent;
+}
+.header nav .microphone a {
+  text-decoration: none;
+}
+.header nav .microphone a i {
+  font-size: 20px;
+  color: #000;
+}
+.header nav .microphone:hover {
+  background: transparent;
+  padding: 9px 13px;
+  border: 2px solid #1f59ff;
+  border-radius: 50%;
+  box-shadow: 2px 3px 8px #171717;
+}
+.header nav .cart-plus {
+  flex-basis: 3%;
+  text-align: center;
+  background: #60a5fa;
+  padding: 12px 11px 10px 10px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+.header nav .cart-plus a {
+  text-decoration: none;
+}
+.header nav .cart-plus a i {
+  font-size: 20px;
+  color: #000;
+}
+.header nav .cart-plus:hover {
+  background: transparent;
+  padding: 13px 11px 10px 10px;
+  border-radius: 50%;
+  border: 2px solid #1f59ff;
+  box-shadow: 2px 3px 8px #171717;
+}
+.header nav .user {
+  flex-basis: 10%;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+.header nav .user a {
+  text-decoration: none;
+}
+.header nav .user a i {
+  font-size: 20px;
+  color: #000;
+  background: #60a5fa;
+  padding: 9px 10px 10px 12px;
+  border-radius: 50px;
+}
+.header nav .user a span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin-left: 5px;
+}
+.header nav .user:hover {
+  border: 2px solid #1f59ff;
+  border-radius: 20px;
+  box-shadow: 2px 3px 8px #171717;
+}
+.header nav .circle {
+  flex-basis: 2%;
+  text-align: center;
+  background: #60a5fa;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  margin-right: 30px;
+}
+.header nav .circle a {
+  text-decoration: none;
+}
+.header nav .circle a i {
+  font-size: 20px;
+  color: #000;
+}
+.header nav .circle:hover {
+  background: transparent;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #1f59ff;
+  box-shadow: 2px 3px 8px #171717;
+}
+
+/*# sourceMappingURL=main.css.map */
