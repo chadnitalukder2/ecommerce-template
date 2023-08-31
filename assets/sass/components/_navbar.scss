@@ -2,22 +2,27 @@
     .nav{
         width: 100%;
         display: flex;
+        position: fixed;
         justify-content: space-between;
          background: $blueColor;
          align-items: center;
-        padding: 20px;
-        .home{
-            flex-basis: 10%;
-            text-align: center;
-            cursor: pointer;
-            border: 1px solid transparent;
+        padding: 20px 0px;
+        z-index: 99999;
+        .menu{
+            border: 1px solid $primaryColorChar;
             border-radius: 20px;
+            flex-basis: 12%;
+        .home{
+            position: relative;
+            cursor: pointer;
+            text-align: center;
+          
             a{
                 text-decoration: none;
                 i{
                     font-size: 20px;
                     color:$blackColor ;
-                    background:$secondaryColorVio;
+                    background:$primaryColorChar;
                     padding: 9px 10px 10px 12px;
                     border-radius: 50px;
                 }
@@ -30,12 +35,54 @@
 
 
             }
-            &:hover{
-                border: 2px solid #1f59ff;
-                border-radius: 20px;
-                box-shadow: 2px 3px 8px #171717;
+        }
+        .hidden{
+            position: absolute;
+            margin-top: 25px;
+            overflow: auto;
+            opacity: 0;
+            background:$blueColor;
+            height: 70vh;
+            
+            ul{
+                list-style:none;
+                li{
+                    padding: 10px;
+                    margin-left: 20px;
+                    a{
+                        text-decoration: none;
+                        font-size: 16px;
+                        color: #171717;
+                    }
+                    &:hover{
+                        color: $secondaryColorF;
+                    
+                    }
+                
+                }
+                span{
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    background: $primaryColorLightText;
+                }
+              
             }
         }
+        &:hover{
+            border: 0px solid $primaryColorLightText;
+            border-radius: 20px;
+            box-shadow:  0px 0px 4px $primaryColorLightText;
+            .hidden{
+                opacity: 1;
+            }
+        }
+        
+    }
+
+  
         .image{
             flex-basis: 10%;
             text-align: center;
@@ -48,8 +95,8 @@
             text-align: center;
             background: $whiteColor;
             height: 45px;
-            border: 2px solid #1f59ff;
-            box-shadow: inset 1px 0px 2px 1px #93C5FC;
+            border: 0px solid $primaryColorLightText;
+            box-shadow: inset 0px 0px 2px 0px $primaryColorLightText;
             border-radius: 50px;
           
             input{
@@ -67,18 +114,18 @@
                 padding: 10px 0 0 8px;
             }
             &:hover{
-                box-shadow:  0px 2px 5px #171717;
+                box-shadow:  0px 0px 4px $primaryColorLightText;
             }
 
         }
         .microphone{
             flex-basis: 2%;
             text-align: center;
-            background:$secondaryColorVio;
+            background:$primaryColorChar;
             padding: 9px 13px;
             border-radius: 50%;
             margin-left: -24px;
-            border: 2px solid transparent;
+            border: 0px solid transparent;
             a{
                 text-decoration: none;
                 i{
@@ -90,9 +137,9 @@
             &:hover{
                 background: transparent;
                 padding: 9px 13px;
-                border: 2px solid  #1f59ff;
+                border: 0px solid  $primaryColorLightText;
                 border-radius: 50%;
-                box-shadow: 2px 3px 8px #171717;
+                box-shadow:  0px 0px 4px $primaryColorLightText;
 
             }
 
@@ -100,10 +147,10 @@
         .cart-plus{
             flex-basis: 3%;
             text-align: center;
-            background:$secondaryColorVio;
+            background:$primaryColorChar;
             padding: 12px 11px 10px 10px;
             border-radius: 50%;
-            border: 2px solid transparent;
+            border: 0px solid transparent;
             a{
                 text-decoration: none;
                 i{
@@ -115,8 +162,8 @@
                 background: transparent;
                 padding: 13px 11px 10px 10px;
                 border-radius: 50%;
-                border: 2px solid  #1f59ff;
-                box-shadow: 2px 3px 8px #171717;
+                border: 0px solid  $primaryColorLightText;
+                box-shadow:  0px 0px 4px $primaryColorLightText;
 
             }
 
@@ -125,14 +172,15 @@
             flex-basis: 10%;
             text-align: center;
             cursor: pointer;
-            border: 1px solid transparent;
+            border: 1px solid $primaryColorChar;
             border-radius: 20px;
+            margin-right: 10px;
             a{
                 text-decoration: none;
                 i{
                     font-size: 20px;
                     color:$blackColor ;
-                    background:$secondaryColorVio;
+                    background:$primaryColorChar;
                     padding: 9px 10px 10px 12px;
                     border-radius: 50px;
                 }
@@ -146,19 +194,19 @@
 
             }
             &:hover{
-                border: 2px solid #1f59ff;
+                border: 0px solid $primaryColorLightText;
                 border-radius: 20px;
-                box-shadow: 2px 3px 8px #171717;
+                box-shadow:  0px 0px 4px $primaryColorLightText;
             }
         }
         .circle{
             flex-basis: 2%;
             text-align: center;
-            background:$secondaryColorVio;
+            background:$primaryColorChar;
             padding:10px 12px;
             border-radius: 50%;
-            border: 2px solid transparent;
-            margin-right: 30px;
+            border: 0px solid transparent;
+            
             a{
                 text-decoration: none;
                 i{
@@ -170,8 +218,8 @@
                 background: transparent;
                 padding: 10px 12px;
                 border-radius: 50%;
-                border: 2px solid  #1f59ff;
-                box-shadow: 2px 3px 8px #171717;
+                border: 0px solid  $primaryColorLightText;
+                box-shadow:  0px 0px 4px $primaryColorLightText;
 
             }
 
