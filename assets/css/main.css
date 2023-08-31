@@ -5,53 +5,55 @@
   font-family: sans-serif;
 }
 
-.header {
-  position: fixed;
-  width: 100%;
+main {
+  padding-left: 50px;
+  padding-right: 50px;
 }
-.header nav {
+
+.nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background: #6495ED;
+  background: #d4d4d8;
   align-items: center;
   padding: 20px;
 }
-.header nav .home {
+.nav .home {
   flex-basis: 10%;
   text-align: center;
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 20px;
 }
-.header nav .home a {
+.nav .home a {
   text-decoration: none;
 }
-.header nav .home a i {
+.nav .home a i {
   font-size: 20px;
   color: #000;
   background: #60a5fa;
   padding: 9px 10px 10px 12px;
   border-radius: 50px;
 }
-.header nav .home a span {
+.nav .home a span {
   font-size: 16px;
   font-weight: 600;
   color: #000;
   margin-left: 5px;
 }
-.header nav .home:hover {
+.nav .home:hover {
   border: 2px solid #1f59ff;
   border-radius: 20px;
   box-shadow: 2px 3px 8px #171717;
 }
-.header nav .image {
+.nav .image {
   flex-basis: 10%;
   text-align: center;
 }
-.header nav .image img {
+.nav .image img {
   width: 120px;
 }
-.header nav .search-box {
+.nav .search-box {
   flex-basis: 45%;
   text-align: center;
   background: #fff;
@@ -60,7 +62,7 @@
   box-shadow: inset 1px 0px 2px 1px #93C5FC;
   border-radius: 50px;
 }
-.header nav .search-box input {
+.nav .search-box input {
   width: 90%;
   outline: none;
   border: none;
@@ -70,14 +72,14 @@
   font-size: 19px;
   background: transparent;
 }
-.header nav .search-box i {
+.nav .search-box i {
   font-size: 20px;
   padding: 10px 0 0 8px;
 }
-.header nav .search-box:hover {
+.nav .search-box:hover {
   box-shadow: 0px 2px 5px #171717;
 }
-.header nav .microphone {
+.nav .microphone {
   flex-basis: 2%;
   text-align: center;
   background: #60a5fa;
@@ -86,21 +88,21 @@
   margin-left: -24px;
   border: 2px solid transparent;
 }
-.header nav .microphone a {
+.nav .microphone a {
   text-decoration: none;
 }
-.header nav .microphone a i {
+.nav .microphone a i {
   font-size: 20px;
   color: #000;
 }
-.header nav .microphone:hover {
+.nav .microphone:hover {
   background: transparent;
   padding: 9px 13px;
   border: 2px solid #1f59ff;
   border-radius: 50%;
   box-shadow: 2px 3px 8px #171717;
 }
-.header nav .cart-plus {
+.nav .cart-plus {
   flex-basis: 3%;
   text-align: center;
   background: #60a5fa;
@@ -108,70 +110,126 @@
   border-radius: 50%;
   border: 2px solid transparent;
 }
-.header nav .cart-plus a {
+.nav .cart-plus a {
   text-decoration: none;
 }
-.header nav .cart-plus a i {
+.nav .cart-plus a i {
   font-size: 20px;
   color: #000;
 }
-.header nav .cart-plus:hover {
+.nav .cart-plus:hover {
   background: transparent;
   padding: 13px 11px 10px 10px;
   border-radius: 50%;
   border: 2px solid #1f59ff;
   box-shadow: 2px 3px 8px #171717;
 }
-.header nav .user {
+.nav .user {
   flex-basis: 10%;
   text-align: center;
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 20px;
 }
-.header nav .user a {
+.nav .user a {
   text-decoration: none;
 }
-.header nav .user a i {
+.nav .user a i {
   font-size: 20px;
   color: #000;
   background: #60a5fa;
   padding: 9px 10px 10px 12px;
   border-radius: 50px;
 }
-.header nav .user a span {
+.nav .user a span {
   font-size: 16px;
   font-weight: 600;
   color: #000;
   margin-left: 5px;
 }
-.header nav .user:hover {
+.nav .user:hover {
   border: 2px solid #1f59ff;
   border-radius: 20px;
   box-shadow: 2px 3px 8px #171717;
 }
-.header nav .circle {
+.nav .circle {
   flex-basis: 2%;
   text-align: center;
   background: #60a5fa;
-  padding: 10px;
+  padding: 10px 12px;
   border-radius: 50%;
   border: 2px solid transparent;
   margin-right: 30px;
 }
-.header nav .circle a {
+.nav .circle a {
   text-decoration: none;
 }
-.header nav .circle a i {
+.nav .circle a i {
   font-size: 20px;
   color: #000;
 }
-.header nav .circle:hover {
+.nav .circle:hover {
   background: transparent;
-  padding: 10px;
+  padding: 10px 12px;
   border-radius: 50%;
   border: 2px solid #1f59ff;
   box-shadow: 2px 3px 8px #171717;
+}
+
+.header {
+  padding-top: 20px;
+  border-radius: 30px;
+}
+
+#slider {
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+#slider figure img {
+  width: 20%;
+  height: 375px;
+  float: left;
+  border-radius: 6px;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  animation: 30s slidy infinite;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
