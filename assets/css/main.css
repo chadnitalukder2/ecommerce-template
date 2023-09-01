@@ -12,6 +12,28 @@ main {
   padding-top: 100px;
 }
 
+button {
+  width: 100px;
+  margin-left: 65px;
+  margin-top: 55px;
+  border: none;
+  background: #E4E6EB;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.5s;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+button p {
+  font-size: 16px;
+  padding: 10px;
+}
+button:hover {
+  background: #FCFCFD;
+  color: #07aef1;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-5px);
+}
+
 .nav {
   width: 100%;
   display: flex;
@@ -23,7 +45,7 @@ main {
   z-index: 99999;
 }
 .nav .menu {
-  border: 1px solid #E4E6EB;
+  border: 1px solid transparent;
   border-radius: 20px;
   flex-basis: 12%;
 }
@@ -52,7 +74,7 @@ main {
   position: absolute;
   margin-top: 25px;
   overflow: auto;
-  opacity: 0;
+  visibility: hidden;
   background: #F5F6F7;
   height: 70vh;
 }
@@ -85,7 +107,7 @@ main {
   box-shadow: 0px 0px 4px #65676B;
 }
 .nav .menu:hover .hidden {
-  opacity: 1;
+  visibility: visible;
 }
 .nav .image {
   flex-basis: 10%;
@@ -120,29 +142,6 @@ main {
 .nav .search-box:hover {
   box-shadow: 0px 0px 4px #65676B;
 }
-.nav .microphone {
-  flex-basis: 2%;
-  text-align: center;
-  background: #E4E6EB;
-  padding: 9px 13px;
-  border-radius: 50%;
-  margin-left: -24px;
-  border: 0px solid transparent;
-}
-.nav .microphone a {
-  text-decoration: none;
-}
-.nav .microphone a i {
-  font-size: 20px;
-  color: #000;
-}
-.nav .microphone:hover {
-  background: transparent;
-  padding: 9px 13px;
-  border: 0px solid #65676B;
-  border-radius: 50%;
-  box-shadow: 0px 0px 4px #65676B;
-}
 .nav .cart-plus {
   flex-basis: 3%;
   text-align: center;
@@ -169,7 +168,7 @@ main {
   flex-basis: 10%;
   text-align: center;
   cursor: pointer;
-  border: 1px solid #E4E6EB;
+  border: 1px solid transparent;
   border-radius: 20px;
   margin-right: 10px;
 }
@@ -286,16 +285,14 @@ main {
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px;
+  grid-gap: 25px;
   box-sizing: border-box;
 }
 .Categories .container .card {
   overflow: hidden;
-  border: 2px solid #E4E6EB;
-  background: #E4E6EB;
+  border: 1px solid #E4E6EB;
   height: 320px;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 0px 0px 0px, #D6D6E7 0 0px 0 inset;
-  transition: all 0.5s;
+  transition: all 0.1s;
 }
 .Categories .container .card a {
   text-decoration: none;
@@ -308,34 +305,18 @@ main {
   padding: 10px;
 }
 .Categories .container .card a img {
-  box-shadow: 0px 4px 5px 0px #65676B;
   width: 100%;
-}
-.Categories .container .card a button {
-  width: 50%;
-  margin-left: 65px;
-  margin-top: 55px;
-  border: none;
-  background: #E4E6EB;
-  cursor: pointer;
-  border-radius: 6px;
-  transition: all 0.5s;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-}
-.Categories .container .card a button p {
-  font-size: 16px;
-  padding: 10px;
-}
-.Categories .container .card a button:hover {
-  background: #FCFCFD;
-  color: #07aef1;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform: translateY(-5px);
 }
 .Categories .container .card:hover {
   background: transparent;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform: translateY(-0.5rem) scale(1);
+  box-shadow: rgba(45, 35, 66, 0.4) 0 5px 9px, #D6D6E7 -1px -2px 1px inset;
+  transform: translateY(-0.2rem);
+}
+.Categories .btn-1 {
+  margin-left: 580px;
+}
+.Categories .btn-1 a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */

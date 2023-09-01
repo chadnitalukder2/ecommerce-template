@@ -9,7 +9,7 @@
         padding: 20px 0px;
         z-index: 99999;
         .menu{
-            border: 1px solid $primaryColorChar;
+            border: 1px solid transparent;
             border-radius: 20px;
             flex-basis: 12%;
         .home{
@@ -40,7 +40,7 @@
             position: absolute;
             margin-top: 25px;
             overflow: auto;
-            opacity: 0;
+             visibility: hidden;
             background:$blueColor;
             height: 70vh;
             
@@ -76,7 +76,7 @@
             border-radius: 20px;
             box-shadow:  0px 0px 4px $primaryColorLightText;
             .hidden{
-                opacity: 1;
+        visibility: visible;
             }
         }
         
@@ -118,32 +118,7 @@
             }
 
         }
-        .microphone{
-            flex-basis: 2%;
-            text-align: center;
-            background:$primaryColorChar;
-            padding: 9px 13px;
-            border-radius: 50%;
-            margin-left: -24px;
-            border: 0px solid transparent;
-            a{
-                text-decoration: none;
-                i{
-                    font-size: 20px;
-                    color:$blackColor ;
-                }
-
-            }
-            &:hover{
-                background: transparent;
-                padding: 9px 13px;
-                border: 0px solid  $primaryColorLightText;
-                border-radius: 50%;
-                box-shadow:  0px 0px 4px $primaryColorLightText;
-
-            }
-
-        }
+       
         .cart-plus{
             flex-basis: 3%;
             text-align: center;
@@ -172,7 +147,7 @@
             flex-basis: 10%;
             text-align: center;
             cursor: pointer;
-            border: 1px solid $primaryColorChar;
+            border: 1px solid transparent;
             border-radius: 20px;
             margin-right: 10px;
             a{
