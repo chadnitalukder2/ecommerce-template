@@ -272,5 +272,63 @@ main {
     left: -400%;
   }
 }
+.Categories {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.Categories h1 {
+  font-size: 42px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.Categories .container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  box-sizing: border-box;
+}
+.Categories .container .card {
+  overflow: hidden;
+  border: 2px solid #E4E6EB;
+  background: #E4E6EB;
+  height: 320px;
+  transition: all 0.5s;
+}
+.Categories .container .card a {
+  text-decoration: none;
+}
+.Categories .container .card a h2 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+  padding: 10px;
+}
+.Categories .container .card a img {
+  box-shadow: 0px 4px 5px 0px #65676B;
+  width: 100%;
+}
+.Categories .container .card a button {
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  background: red;
+  cursor: pointer;
+}
+.Categories .container .card a button p {
+  font-size: 16px;
+  padding: 10px;
+}
+.Categories .container .card a button:hover {
+  color: white;
+}
+.Categories .container .card:hover {
+  background: transparent;
+  border: 1px solid #65676B;
+  box-shadow: 0px 0px 4px #65676B;
+  transform: translateY(-1.5rem) scale(1.03);
+}
 
 /*# sourceMappingURL=main.css.map */
