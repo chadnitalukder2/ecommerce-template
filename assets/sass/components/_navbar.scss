@@ -4,7 +4,7 @@
         display: flex;
         position: fixed;
         justify-content: space-between;
-         background: $blueColor;
+         background: $navColor;
          align-items: center;
         padding: 20px 0px;
         z-index: 99999;
@@ -21,15 +21,14 @@
                 text-decoration: none;
                 i{
                     font-size: 20px;
-                    color:$blackColor ;
-                    background:$primaryColorChar;
+                    color: $blackColor;
                     padding: 9px 10px 10px 12px;
                     border-radius: 50px;
                 }
                 span{
                     font-size: 16px;
                     font-weight: 600;
-                    color:$blackColor ;
+                    color: $blackColor;
                     margin-left: 5px;
                 }
 
@@ -41,7 +40,7 @@
             margin-top: 25px;
             overflow: auto;
              visibility: hidden;
-            background:$blueColor;
+            background: $whiteColorBoder;
             height: 70vh;
             
             ul{
@@ -55,7 +54,7 @@
                         color: #171717;
                     }
                     &:hover{
-                        color: $secondaryColorF;
+                        color:  $blackColor;
                     
                     }
                 
@@ -74,7 +73,7 @@
         &:hover{
             border: 0px solid $primaryColorLightText;
             border-radius: 20px;
-            box-shadow:  0px 0px 4px $primaryColorLightText;
+            background:  $hoverColor;
             .hidden{
         visibility: visible;
             }
@@ -122,7 +121,6 @@
         .cart-plus{
             flex-basis: 3%;
             text-align: center;
-            background:$primaryColorChar;
             padding: 12px 11px 10px 10px;
             border-radius: 50%;
             border: 0px solid transparent;
@@ -130,16 +128,13 @@
                 text-decoration: none;
                 i{
                     font-size: 20px;
-                    color:$blackColor ;
+                    color: $blackColor;
                 }
             }
             &:hover{
-                background: transparent;
+                background: $hoverColor;
                 padding: 13px 11px 10px 10px;
                 border-radius: 50%;
-                border: 0px solid  $primaryColorLightText;
-                box-shadow:  0px 0px 4px $primaryColorLightText;
-
             }
 
         }
@@ -147,54 +142,48 @@
             flex-basis: 10%;
             text-align: center;
             cursor: pointer;
-            border: 1px solid transparent;
             border-radius: 20px;
             margin-right: 10px;
             a{
                 text-decoration: none;
                 i{
                     font-size: 20px;
-                    color:$blackColor ;
-                    background:$primaryColorChar;
+                    color: $blackColor;
                     padding: 9px 10px 10px 12px;
                     border-radius: 50px;
                 }
                 span{
                     font-size: 16px;
                     font-weight: 600;
-                    color:$blackColor ;
+                    color: $blackColor;
                     margin-left: 5px;
                 }
 
 
             }
             &:hover{
-                border: 0px solid $primaryColorLightText;
                 border-radius: 20px;
-                box-shadow:  0px 0px 4px $primaryColorLightText;
+                background:  $hoverColor;
             }
         }
         .circle{
             flex-basis: 2%;
             text-align: center;
-            background:$primaryColorChar;
             padding:10px 12px;
             border-radius: 50%;
-            border: 0px solid transparent;
             
             a{
                 text-decoration: none;
                 i{
                     font-size: 20px;
-                    color:$blackColor ;
+                    color: $blackColor;
                 }
             }
             &:hover{
-                background: transparent;
+                background:  $hoverColor;
                 padding: 10px 12px;
                 border-radius: 50%;
-                border: 0px solid  $primaryColorLightText;
-                box-shadow:  0px 0px 4px $primaryColorLightText;
+            
 
             }
 

@@ -12,7 +12,10 @@ main {
   padding-top: 100px;
 }
 
-button {
+.btn {
+  text-align: center;
+}
+.btn button {
   width: 100px;
   margin-left: 65px;
   margin-top: 55px;
@@ -20,18 +23,24 @@ button {
   background: #E4E6EB;
   cursor: pointer;
   border-radius: 6px;
-  transition: all 0.5s;
+  transition: all 0.3s;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
-button p {
+.btn button a {
+  text-decoration: none;
+}
+.btn button a p {
   font-size: 16px;
   padding: 10px;
+  color: #525151;
 }
-button:hover {
+.btn button:hover {
   background: #FCFCFD;
-  color: #07aef1;
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform: translateY(-5px);
+  transform: translateY(-2px);
+}
+.btn button:hover p {
+  color: #f59e0b;
 }
 
 .nav {
@@ -39,7 +48,7 @@ button:hover {
   display: flex;
   position: fixed;
   justify-content: space-between;
-  background: #F5F6F7;
+  background: #f59e0b;
   align-items: center;
   padding: 20px 0px;
   z-index: 99999;
@@ -59,15 +68,14 @@ button:hover {
 }
 .nav .menu .home a i {
   font-size: 20px;
-  color: #000;
-  background: #E4E6EB;
+  color: #171717;
   padding: 9px 10px 10px 12px;
   border-radius: 50px;
 }
 .nav .menu .home a span {
   font-size: 16px;
   font-weight: 600;
-  color: #000;
+  color: #171717;
   margin-left: 5px;
 }
 .nav .menu .hidden {
@@ -75,7 +83,7 @@ button:hover {
   margin-top: 25px;
   overflow: auto;
   visibility: hidden;
-  background: #F5F6F7;
+  background: #E4E6EB;
   height: 70vh;
 }
 .nav .menu .hidden ul {
@@ -91,7 +99,7 @@ button:hover {
   color: #171717;
 }
 .nav .menu .hidden ul li:hover {
-  color: #7CFC00;
+  color: #171717;
 }
 .nav .menu .hidden ul span {
   display: block;
@@ -104,7 +112,7 @@ button:hover {
 .nav .menu:hover {
   border: 0px solid #65676B;
   border-radius: 20px;
-  box-shadow: 0px 0px 4px #65676B;
+  background: rgba(245, 173, 40, 0.9803921569);
 }
 .nav .menu:hover .hidden {
   visibility: visible;
@@ -145,7 +153,6 @@ button:hover {
 .nav .cart-plus {
   flex-basis: 3%;
   text-align: center;
-  background: #E4E6EB;
   padding: 12px 11px 10px 10px;
   border-radius: 50%;
   border: 0px solid transparent;
@@ -155,20 +162,17 @@ button:hover {
 }
 .nav .cart-plus a i {
   font-size: 20px;
-  color: #000;
+  color: #171717;
 }
 .nav .cart-plus:hover {
-  background: transparent;
+  background: rgba(245, 173, 40, 0.9803921569);
   padding: 13px 11px 10px 10px;
   border-radius: 50%;
-  border: 0px solid #65676B;
-  box-shadow: 0px 0px 4px #65676B;
 }
 .nav .user {
   flex-basis: 10%;
   text-align: center;
   cursor: pointer;
-  border: 1px solid transparent;
   border-radius: 20px;
   margin-right: 10px;
 }
@@ -177,43 +181,37 @@ button:hover {
 }
 .nav .user a i {
   font-size: 20px;
-  color: #000;
-  background: #E4E6EB;
+  color: #171717;
   padding: 9px 10px 10px 12px;
   border-radius: 50px;
 }
 .nav .user a span {
   font-size: 16px;
   font-weight: 600;
-  color: #000;
+  color: #171717;
   margin-left: 5px;
 }
 .nav .user:hover {
-  border: 0px solid #65676B;
   border-radius: 20px;
-  box-shadow: 0px 0px 4px #65676B;
+  background: rgba(245, 173, 40, 0.9803921569);
 }
 .nav .circle {
   flex-basis: 2%;
   text-align: center;
-  background: #E4E6EB;
   padding: 10px 12px;
   border-radius: 50%;
-  border: 0px solid transparent;
 }
 .nav .circle a {
   text-decoration: none;
 }
 .nav .circle a i {
   font-size: 20px;
-  color: #000;
+  color: #171717;
 }
 .nav .circle:hover {
-  background: transparent;
+  background: rgba(245, 173, 40, 0.9803921569);
   padding: 10px 12px;
   border-radius: 50%;
-  border: 0px solid #65676B;
-  box-shadow: 0px 0px 4px #65676B;
 }
 
 .header {
@@ -280,6 +278,7 @@ button:hover {
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;
+  color: #525151;
 }
 .Categories .container {
   margin-top: 50px;
@@ -290,8 +289,9 @@ button:hover {
 }
 .Categories .container .card {
   overflow: hidden;
-  border: 1px solid #E4E6EB;
+  border: 2px solid #E4E6EB;
   height: 320px;
+  border-radius: 6px;
   transition: all 0.1s;
 }
 .Categories .container .card a {
@@ -301,7 +301,7 @@ button:hover {
   font-size: 24px;
   font-weight: 600;
   text-align: center;
-  color: #000;
+  color: #525151;
   padding: 10px;
 }
 .Categories .container .card a img {
@@ -311,12 +311,6 @@ button:hover {
   background: transparent;
   box-shadow: rgba(45, 35, 66, 0.4) 0 5px 9px, #D6D6E7 -1px -2px 1px inset;
   transform: translateY(-0.2rem);
-}
-.Categories .btn-1 {
-  margin-left: 580px;
-}
-.Categories .btn-1 a {
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */

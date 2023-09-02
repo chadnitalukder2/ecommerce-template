@@ -6,6 +6,7 @@
     text-align: center;
     font-weight: 600;
     text-transform: uppercase;
+    color:   $darkColorLightFont;
   }
   .container{
     margin-top: 50px;
@@ -16,8 +17,9 @@
 
     .card{
       overflow: hidden;
-      border: 1px solid  $primaryColorChar;
+      border: 2px solid  $primaryColorChar;
       height: 320px;
+      border-radius: 6px;
       transition: all .1s;
       a{
         text-decoration: none;
@@ -25,7 +27,7 @@
           font-size: $mediumText;
           font-weight: 600;
           text-align: center;
-          color:$blackColor ;
+          color:$darkColorLightFont;
           padding: 10px;
 
         }
@@ -43,10 +45,5 @@
     }
     }
   }
-  .btn-1{
-    margin-left: 580px;
-    a{
-      text-decoration: none;
-    }
-  }
+  
 }
