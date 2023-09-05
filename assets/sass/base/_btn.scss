@@ -6,7 +6,7 @@
     margin-left: 65px;
     margin-top: 55px;
     border: none;
-    background:$primaryColorChar;
+    background:palegreen;
     cursor: pointer;
     border-radius: 6px;
     transition: all .3s;
@@ -16,7 +16,6 @@
       p{
         font-size:  $smallText;
         padding: 10px;
-        color: $darkColorLightFont;
       }
     }
     &:hover{
@@ -24,7 +23,7 @@
       box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
       transform: translateY(-2px);
       p{
-        color:  $navColor;
+        color:  $fontColorSmall;
       }
   }
  

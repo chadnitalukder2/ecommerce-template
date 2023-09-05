@@ -2,12 +2,46 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;
-    font-family:sans-serif;
+    font-family:"Cormorant Garamond",sans-serif;
 }
 main{
     position:absolute;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 100px;
-    background: #f5f5f5;
+    width: 100%;
+}
+
+h1{
+    font-size:  $bigText;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:   $BoldFontColor;
+  
+}
+.view{
+  text-align: center;
+  padding-top: 20px;
+  a{
+    text-decoration: none;
+    color: $fontColorSmall;
+    position: relative;
+    text-transform: uppercase;
+    transition: all .2s;
+    p{
+      font-size: 13px;
+      
+    }
+    &::after{ 
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 1.3px;
+      transform: translateX( -50px);
+      background:$BoldFontColor;
+    }
+    &:hover{
+      color:$primaryColor;
+    }
+  }
 }
