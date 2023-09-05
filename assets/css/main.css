@@ -399,24 +399,24 @@ h1 {
   box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
-.recent-product {
+.product {
   padding-bottom: 70px;
 }
-.recent-product h1 {
+.product h1 {
   font-size: 35px;
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;
   color: #000000;
 }
-.recent-product .container {
+.product .container {
   margin-top: 70px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 25px;
   box-sizing: border-box;
 }
-.recent-product .container .item {
+.product .container .item {
   position: relative;
   overflow: hidden;
   background: #fff;
@@ -425,7 +425,7 @@ h1 {
   transition: all 0.2s;
   border: 1px solid rgba(217, 210, 210, 0.768627451);
 }
-.recent-product .container .item .cart {
+.product .container .item .cart {
   position: absolute;
   margin-top: 8px;
   transition: all 0.5s;
@@ -434,52 +434,52 @@ h1 {
   padding: 6px;
   border-radius: 20px;
 }
-.recent-product .container .item .cart a {
+.product .container .item .cart a {
   text-decoration: none;
 }
-.recent-product .container .item .cart a i {
+.product .container .item .cart a i {
   font-size: 22px;
   color: #5d5b5b;
 }
-.recent-product .container .item a {
+.product .container .item a {
   text-decoration: none;
 }
-.recent-product .container .item a .image {
+.product .container .item a .image {
   width: 100%;
   height: 300px;
 }
-.recent-product .container .item a .image img {
+.product .container .item a .image img {
   width: 100%;
   height: 100%;
 }
-.recent-product .container .item a .info {
+.product .container .item a .info {
   text-align: center;
   padding-top: 15px;
 }
-.recent-product .container .item a .info p {
+.product .container .item a .info p {
   font-size: 16px;
   font-weight: 500;
   color: #000000;
 }
-.recent-product .container .item a .info .icon {
+.product .container .item a .info .icon {
   font-size: 13px;
   color: #5d5b5b;
   letter-spacing: -1.5px;
   margin-top: 8px;
 }
-.recent-product .container .item a .info .price {
+.product .container .item a .info .price {
   margin-top: 8px;
   margin-bottom: 10px;
 }
-.recent-product .container .item a .info .price p {
+.product .container .item a .info .price p {
   font-size: 16px;
   font-weight: 700;
   color: #000000;
 }
-.recent-product .container .item:hover {
+.product .container .item:hover {
   box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
-.recent-product .container .item:hover .cart {
+.product .container .item:hover .cart {
   transform: translate(250px);
 }
 
