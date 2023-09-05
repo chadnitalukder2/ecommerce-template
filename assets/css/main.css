@@ -5,8 +5,7 @@
   font-family: "Cormorant Garamond", sans-serif;
 }
 
-main {
-  position: absolute;
+.main {
   padding-left: 50px;
   padding-right: 50px;
   width: 100%;
@@ -44,36 +43,6 @@ h1 {
 }
 .view a:hover {
   color: #be185d;
-}
-
-.btn {
-  text-align: center;
-}
-.btn button {
-  width: 100px;
-  margin-left: 65px;
-  margin-top: 55px;
-  border: none;
-  background: palegreen;
-  cursor: pointer;
-  border-radius: 6px;
-  transition: all 0.3s;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-}
-.btn button a {
-  text-decoration: none;
-}
-.btn button a p {
-  font-size: 16px;
-  padding: 10px;
-}
-.btn button:hover {
-  background: #FCFCFD;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform: translateY(-2px);
-}
-.btn button:hover p {
-  color: #5d5b5b;
 }
 
 .nav {
@@ -131,6 +100,7 @@ h1 {
   padding: 10px;
   margin-left: 30px;
   margin-right: 30px;
+  margin-top: 15px;
 }
 .nav .nav-right .menu .hidden ul li a {
   text-decoration: none;
@@ -239,6 +209,7 @@ h1 {
   text-align: center;
   padding: 10px 12px;
   border-radius: 50%;
+  margin-right: 20px;
 }
 .nav .nav-left .circle a {
   text-decoration: none;
@@ -460,6 +431,76 @@ h1 {
 }
 .product .container .item:hover .cart {
   transform: translate(250px);
+}
+
+.footer {
+  background: #131a22;
+}
+.footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 50px;
+  border-bottom: 1px solid #515151;
+}
+.footer .footer-top .logo {
+  flex-basis: 30%;
+}
+.footer .footer-top .logo img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+.footer .footer-top .logo p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer .footer-top .logo h3 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+}
+.footer .footer-top h4 {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.footer .footer-top .link ul {
+  list-style: none;
+}
+.footer .footer-top .link ul li {
+  margin-bottom: 20px;
+}
+.footer .footer-top .link ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.2s;
+}
+.footer .footer-top .link ul li a:hover {
+  color: #be185d;
+}
+.footer .footer-top .service {
+  flex-basis: 25%;
+}
+.footer .footer-top .categories {
+  flex-basis: 20%;
+}
+.footer .footer-top .our-company {
+  flex-basis: 25%;
+}
+.footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+.footer .footer-bottom .left p {
+  font-size: 16px;
+  color: #fff;
+}
+.footer .footer-bottom .right p {
+  font-size: 16px;
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
