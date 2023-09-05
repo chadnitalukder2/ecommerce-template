@@ -8,6 +8,9 @@
          align-items: center;
         padding: 8px 0px;
         z-index: 99999;
+        @media only screen and (min-width: 1500px){
+            padding:0px 150px ;
+          }
   .nav-right{
     display: flex;
     gap: 30px;
@@ -45,7 +48,7 @@
         overflow: auto;
         background: #ebe9e9;
         height: 100vh;
-        margin-left: -260px;
+        margin-left: -400px;
         transition: all .5s;
         ul{
             list-style:none;

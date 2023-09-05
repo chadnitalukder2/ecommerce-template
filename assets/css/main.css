@@ -55,6 +55,11 @@ h1 {
   padding: 8px 0px;
   z-index: 99999;
 }
+@media only screen and (min-width: 1500px) {
+  .nav {
+    padding: 0px 150px;
+  }
+}
 .nav .nav-right {
   display: flex;
   gap: 30px;
@@ -90,7 +95,7 @@ h1 {
   overflow: auto;
   background: #ebe9e9;
   height: 100vh;
-  margin-left: -260px;
+  margin-left: -400px;
   transition: all 0.5s;
 }
 .nav .nav-right .menu .hidden ul {
@@ -223,6 +228,11 @@ h1 {
   padding-top: 20px;
   border-radius: 30px;
 }
+@media only screen and (min-width: 1500px) {
+  .header {
+    padding: 0px 150px;
+  }
+}
 
 #slider {
   overflow: hidden;
@@ -278,6 +288,11 @@ h1 {
 .Categories {
   margin-top: 70px;
   margin-bottom: 70px;
+}
+@media only screen and (min-width: 1500px) {
+  .Categories {
+    padding: 0px 150px;
+  }
 }
 .Categories h1 {
   font-size: 35px;
@@ -366,6 +381,11 @@ h1 {
   grid-gap: 25px;
   box-sizing: border-box;
 }
+@media only screen and (min-width: 1500px) {
+  .product .container {
+    padding: 0px 150px;
+  }
+}
 .product .container .item {
   position: relative;
   overflow: hidden;
@@ -443,6 +463,11 @@ h1 {
   padding: 50px;
   border-bottom: 1px solid #515151;
 }
+@media only screen and (min-width: 1500px) {
+  .footer .footer-top {
+    padding: 0px 150px;
+  }
+}
 .footer .footer-top .logo {
   flex-basis: 30%;
 }
@@ -493,6 +518,11 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding: 50px;
+}
+@media only screen and (min-width: 1500px) {
+  .footer .footer-bottom {
+    padding: 0px 150px;
+  }
 }
 .footer .footer-bottom .left p {
   font-size: 16px;

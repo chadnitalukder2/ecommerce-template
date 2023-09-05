@@ -1,6 +1,9 @@
 .Categories {
   margin-top: 70px;
   margin-bottom: 70px;
+  @media only screen and (min-width: 1500px){
+    padding:0px 150px ;
+  }
   h1 {
     font-size: $bigText;
     text-align: center;

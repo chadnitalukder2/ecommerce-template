@@ -6,6 +6,9 @@
     gap: 100px;
     padding: 50px;
     border-bottom: 1px solid #515151;
+    @media only screen and (min-width: 1500px){
+        padding:0px 150px ;
+      }
     .logo {
       flex-basis: 30%;
       img {
@@ -63,6 +66,9 @@
     display: flex;
     justify-content: space-between;
     padding: 50px;
+    @media only screen and (min-width: 1500px){
+        padding:0px 150px ;
+      }
     .left{
         p{
             font-size:   $smallText;
