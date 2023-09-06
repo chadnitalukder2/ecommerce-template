@@ -10,6 +10,12 @@
   padding-right: 50px;
   width: 100%;
 }
+@media only screen and (max-width: 750px) {
+  .main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
 h1 {
   font-size: 35px;
@@ -161,6 +167,11 @@ h1 {
   box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
   border-radius: 50px;
 }
+@media only screen and (max-width: 1100px) {
+  .nav .search-box {
+    width: 350px;
+  }
+}
 .nav .search-box input {
   width: 90%;
   outline: none;
@@ -170,6 +181,11 @@ h1 {
   padding-right: 10px;
   font-size: 16px;
   background: transparent;
+}
+@media only screen and (max-width: 1100px) {
+  .nav .search-box input {
+    width: 70%;
+  }
 }
 .nav .search-box i {
   font-size: 20px;
@@ -332,6 +348,16 @@ h1 {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 25px;
 }
+@media only screen and (max-width: 1000px) {
+  .Categories .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 750px) {
+  .Categories .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .Categories .container .card {
   overflow: hidden;
   border: 1px solid rgba(217, 210, 210, 0.768627451);
@@ -384,6 +410,16 @@ h1 {
 @media only screen and (min-width: 1500px) {
   .product .container {
     padding: 0px 150px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .product .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 750px) {
+  .product .container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .product .container .item {
@@ -458,6 +494,7 @@ h1 {
 }
 .footer .footer-top {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 100px;
   padding: 50px;
@@ -465,7 +502,7 @@ h1 {
 }
 @media only screen and (min-width: 1500px) {
   .footer .footer-top {
-    padding: 0px 150px;
+    padding: 50px 150px;
   }
 }
 .footer .footer-top .logo {
@@ -521,7 +558,7 @@ h1 {
 }
 @media only screen and (min-width: 1500px) {
   .footer .footer-bottom {
-    padding: 0px 150px;
+    padding: 50px 150px;
   }
 }
 .footer .footer-bottom .left p {
