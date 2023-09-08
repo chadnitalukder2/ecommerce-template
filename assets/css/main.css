@@ -95,6 +95,7 @@ h1 {
   margin-left: 5px;
 }
 .nav .nav-right .menu .hidden {
+  z-index: 999;
   position: absolute;
   margin-top: -50px;
   overflow: auto;
@@ -195,7 +196,7 @@ h1 {
 }
 .nav .nav-left {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 .nav .nav-left .cart-plus {
   text-align: center;
@@ -214,7 +215,7 @@ h1 {
   text-align: center;
   cursor: pointer;
   border-radius: 20px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .nav .nav-left .user a {
   text-decoration: none;
@@ -229,7 +230,6 @@ h1 {
   text-align: center;
   padding: 10px 12px;
   border-radius: 50%;
-  margin-right: 20px;
 }
 .nav .nav-left .circle a {
   text-decoration: none;
@@ -573,11 +573,12 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at 100%, #be185d 50%, #eee 50%);
+  background: radial-gradient(circle at 100%, #fff 50%, #eee 50%);
 }
 form .loging {
   background: #f5f5f5;
   width: 30%;
+  border: 1px solid rgba(217, 210, 210, 0.768627451);
 }
 form .loging h2 {
   font-size: 35px;
@@ -658,6 +659,145 @@ form .loging .register p a {
 }
 form .loging .register p a:hover {
   color: #be185d;
+}
+
+.shop {
+  width: 100%;
+  padding: 50px;
+}
+.shop .contaier {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.shop .contaier .right-container {
+  width: 110px;
+  margin: 50px;
+}
+.shop .contaier .right-container a {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid rgb(161, 161, 161);
+  transition: all 0.2s;
+}
+.shop .contaier .right-container a i {
+  font-size: 20px;
+  color: #5d5b5b;
+}
+.shop .contaier .right-container a p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #5d5b5b;
+}
+.shop .contaier .right-container a:hover {
+  background: #be185d;
+}
+.shop .contaier .right-container a:hover p {
+  color: #fff;
+}
+.shop .contaier .right-container a:hover i {
+  color: #fff;
+}
+.shop .contaier .left-container {
+  margin: 50px;
+}
+.shop .contaier .left-container .select-box {
+  display: flex;
+  gap: 10px;
+}
+.shop .contaier .left-container .select-box p {
+  font-size: 16px;
+  padding-top: 12px;
+  color: #5d5b5b;
+}
+.shop .contaier .left-container .select-box select {
+  font-size: 16px;
+  width: 200px;
+  height: 40px;
+  border-radius: 6px;
+  outline: none;
+  color: #5d5b5b;
+  border: 1px solid rgb(161, 161, 161);
+}
+.shop .contaier .left-container .select-box select option {
+  font-size: 16px;
+  width: 200px;
+  height: 50px;
+  color: #5d5b5b;
+}
+.shop .shop-page {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+  box-sizing: border-box;
+}
+.shop .shop-page .item {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  width: 100%;
+  border-radius: 6px;
+  transition: all 0.2s;
+  border: 1px solid rgba(217, 210, 210, 0.768627451);
+}
+.shop .shop-page .item .cart {
+  position: absolute;
+  margin-top: 8px;
+  transition: all 0.5s;
+  transform: translateX(300px);
+  background: #fff;
+  padding: 6px;
+  border-radius: 20px;
+}
+.shop .shop-page .item .cart a {
+  text-decoration: none;
+}
+.shop .shop-page .item .cart a i {
+  font-size: 22px;
+  color: #5d5b5b;
+}
+.shop .shop-page .item a {
+  text-decoration: none;
+}
+.shop .shop-page .item a .image {
+  width: 100%;
+  height: 300px;
+}
+.shop .shop-page .item a .image img {
+  width: 100%;
+  height: 100%;
+}
+.shop .shop-page .item a .info {
+  text-align: center;
+  padding-top: 15px;
+}
+.shop .shop-page .item a .info p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.shop .shop-page .item a .info .icon {
+  font-size: 13px;
+  color: #5d5b5b;
+  letter-spacing: -1.5px;
+  margin-top: 8px;
+}
+.shop .shop-page .item a .info .price {
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+.shop .shop-page .item a .info .price p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+}
+.shop .shop-page .item:hover {
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+.shop .shop-page .item:hover .cart {
+  transform: translate(250px);
 }
 
 /*# sourceMappingURL=main.css.map */
