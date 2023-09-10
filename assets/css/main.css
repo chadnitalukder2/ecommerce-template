@@ -88,6 +88,9 @@ h1 {
   border-radius: 50px;
   margin-left: 20px;
 }
+.nav .nav-right .menu .home a i:hover {
+  color: #be185d;
+}
 .nav .nav-right .menu .home a span {
   font-size: 16px;
   font-weight: 600;
@@ -99,7 +102,7 @@ h1 {
   position: absolute;
   margin-top: -50px;
   overflow: auto;
-  background: #ebe9e9;
+  background: #FFF;
   height: 100vh;
   margin-left: -400px;
   transition: all 0.5s;
@@ -204,12 +207,128 @@ h1 {
   border-radius: 50%;
   border: 0px solid transparent;
 }
-.nav .nav-left .cart-plus a {
+.nav .nav-left .cart-plus .cart {
+  position: relative;
+}
+.nav .nav-left .cart-plus .cart a {
   text-decoration: none;
 }
-.nav .nav-left .cart-plus a i {
+.nav .nav-left .cart-plus .cart a i {
   font-size: 22px;
   color: #5d5b5b;
+}
+.nav .nav-left .cart-plus .cart a i:hover {
+  color: #be185d;
+}
+.nav .nav-left .cart-plus .cart-details {
+  z-index: 999;
+  position: absolute;
+  margin-top: -50px;
+  overflow: auto;
+  background: #FFF;
+  padding: 40px 20px;
+  width: 350px;
+  margin-left: -300px;
+  transition: all 0.5s;
+}
+.nav .nav-left .cart-plus .cart-details .cros {
+  text-align: right;
+  margin-bottom: 15px;
+}
+.nav .nav-left .cart-plus .cart-details .cros a {
+  text-decoration: none;
+}
+.nav .nav-left .cart-plus .cart-details .cros a i {
+  font-size: 20px;
+  color: #000000;
+}
+.nav .nav-left .cart-plus .cart-details .cros a i:hover {
+  color: #be185d;
+}
+.nav .nav-left .cart-plus .cart-details h2 {
+  font-size: 22px;
+  text-align: left;
+  color: #000000;
+  padding-bottom: 10px;
+}
+.nav .nav-left .cart-plus .cart-details .card {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  top: 0;
+  padding-top: 30px;
+}
+.nav .nav-left .cart-plus .cart-details .card .item {
+  display: flex;
+  gap: 10px;
+}
+.nav .nav-left .cart-plus .cart-details .card .item .image img {
+  width: 70px;
+}
+.nav .nav-left .cart-plus .cart-details .card .item .details {
+  text-align: left;
+  line-height: 1.5;
+}
+.nav .nav-left .cart-plus .cart-details .card .item .details a {
+  text-decoration: none;
+}
+.nav .nav-left .cart-plus .cart-details .card .item .details a h6 {
+  font-size: 16px;
+  color: #000000;
+}
+.nav .nav-left .cart-plus .cart-details .card .item .details a h6:hover {
+  color: #be185d;
+}
+.nav .nav-left .cart-plus .cart-details .card .item .details p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #be185d;
+}
+.nav .nav-left .cart-plus .cart-details .card .item .details p span {
+  margin-left: 5px;
+  color: #817e7e;
+  text-decoration: line-through;
+}
+.nav .nav-left .cart-plus .cart-details .card .trash a {
+  text-decoration: none;
+}
+.nav .nav-left .cart-plus .cart-details .card .trash a i {
+  font-size: 15px;
+  color: #5d5b5b;
+}
+.nav .nav-left .cart-plus .cart-details .card .trash a i:hover {
+  color: #be185d;
+}
+.nav .nav-left .cart-plus .cart-details .price {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav .nav-left .cart-plus .cart-details .price h6 {
+  font-size: 22px;
+  color: #000000;
+}
+.nav .nav-left .cart-plus .cart-details .btn {
+  margin-top: 20px;
+}
+.nav .nav-left .cart-plus .cart-details .btn button {
+  outline: none;
+  width: 100%;
+  height: 45px;
+  background: #212121;
+  transition: all 0.2s;
+  border: 1px solid #212121;
+}
+.nav .nav-left .cart-plus .cart-details .btn button a {
+  text-decoration: none;
+}
+.nav .nav-left .cart-plus .cart-details .btn button a p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+.nav .nav-left .cart-plus .cart-details .btn button:hover {
+  background: #be185d;
 }
 .nav .nav-left .user {
   text-align: center;
@@ -226,6 +345,9 @@ h1 {
   padding: 9px 10px 10px 12px;
   border-radius: 50px;
 }
+.nav .nav-left .user a i:hover {
+  color: #be185d;
+}
 .nav .nav-left .circle {
   text-align: center;
   padding: 10px 12px;
@@ -237,6 +359,9 @@ h1 {
 .nav .nav-left .circle a i {
   font-size: 22px;
   color: #5d5b5b;
+}
+.nav .nav-left .circle a i:hover {
+  color: #be185d;
 }
 
 .header {
@@ -368,10 +493,15 @@ h1 {
 .Categories .container .card .image {
   width: 100%;
   height: 280px;
+  overflow: hidden;
 }
 .Categories .container .card .image img {
   width: 100%;
   height: 100%;
+  transition: all 0.2s;
+}
+.Categories .container .card .image img:hover {
+  transform: scale(1.1);
 }
 .Categories .container .card .info {
   text-align: center;
@@ -450,10 +580,12 @@ h1 {
 .product .container .item a .image {
   width: 100%;
   height: 300px;
+  overflow: hidden;
 }
 .product .container .item a .image img {
   width: 100%;
   height: 100%;
+  transition: all 0.2s;
 }
 .product .container .item a .info {
   text-align: center;
@@ -484,6 +616,10 @@ h1 {
 }
 .product .container .item:hover .cart {
   transform: translate(250px);
+  z-index: 222;
+}
+.product .container .item:hover img {
+  transform: scale(1.1);
 }
 
 .footer {
@@ -764,10 +900,12 @@ form .loging .register p a:hover {
 .shop .shop-page .item a .image {
   width: 100%;
   height: 300px;
+  overflow: hidden;
 }
 .shop .shop-page .item a .image img {
   width: 100%;
   height: 100%;
+  transition: all 0.2s;
 }
 .shop .shop-page .item a .info {
   text-align: center;
@@ -798,6 +936,10 @@ form .loging .register p a:hover {
 }
 .shop .shop-page .item:hover .cart {
   transform: translate(250px);
+  z-index: 9;
+}
+.shop .shop-page .item:hover img {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=main.css.map */
