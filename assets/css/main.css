@@ -209,6 +209,9 @@ h1 {
   border-radius: 50%;
   border: 0px solid transparent;
 }
+.nav .nav-left .cart-plus:hover .cart-details {
+  left: 950px;
+}
 .nav .nav-left .cart-plus .cart a {
   text-decoration: none;
 }
