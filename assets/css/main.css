@@ -200,15 +200,14 @@ h1 {
 .nav .nav-left {
   display: flex;
   gap: 10px;
+  overflow: hidden;
 }
 .nav .nav-left .cart-plus {
+  position: relative;
   text-align: center;
   padding: 12px 11px 10px 10px;
   border-radius: 50%;
   border: 0px solid transparent;
-}
-.nav .nav-left .cart-plus .cart {
-  position: relative;
 }
 .nav .nav-left .cart-plus .cart a {
   text-decoration: none;
@@ -224,11 +223,10 @@ h1 {
   z-index: 999;
   position: absolute;
   margin-top: -50px;
-  overflow: auto;
   background: #FFF;
   padding: 40px 20px;
   width: 350px;
-  margin-left: -300px;
+  right: 200px;
   transition: all 0.5s;
 }
 .nav .nav-left .cart-plus .cart-details .cros {
@@ -372,57 +370,62 @@ h1 {
     padding: 0px 150px;
   }
 }
-
-#slider {
-  overflow: hidden;
-  border-radius: 6px;
-}
-
-#slider figure img {
-  width: 20%;
-  height: 100vh;
-  float: left;
-  border-radius: 6px;
-}
-
-#slider figure {
+.header .slider {
   position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+.header .slider img {
+  width: 100%;
+}
+.header .consol-item {
+  position: absolute;
+  top: 170px;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 150px;
+}
+.header .consol-item .details-box {
+  flex-basis: 40%;
+}
+.header .consol-item .details-box h1 {
+  font-size: 55px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
   text-align: left;
-  animation: 30s slidy infinite;
+  margin-bottom: 15px;
+  color: #002c3e;
+  line-height: 70px;
+}
+.header .consol-item .details-box h1 span {
+  font-family: "Playfair Display", serif;
+  color: #be185d;
+}
+.header .consol-item .details-box p {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 1.5rem;
+  color: #5d5b5b;
+}
+.header .consol-item .details-box .btn {
+  margin-top: 10px;
+}
+.header .consol-item .details-box .btn a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 45px;
+  background-color: #be185d;
+  border: 1px solid #be185d;
+  color: #fff;
+  transition: all 0.3s;
+  font-weight: 700;
+}
+.header .consol-item .details-box .btn a:hover {
+  background: transparent;
+  color: #be185d;
 }
 
-@keyframes slidy {
-  0% {
-    left: 0%;
-  }
-  20% {
-    left: 0%;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -400%;
-  }
-}
 .Categories {
   margin-top: 70px;
   margin-bottom: 70px;
@@ -940,6 +943,40 @@ form .loging .register p a:hover {
 }
 .shop .shop-page .item:hover img {
   transform: scale(1.1);
+}
+
+.shopping-cart .container {
+  padding: 100px;
+}
+.shopping-cart .container h1 {
+  padding-bottom: 50px;
+}
+.shopping-cart .container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+.shopping-cart .container table thead {
+  border-color: #E8E8E8;
+  border-bottom: 0 solid transparent;
+  color: #212121;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 20px;
+  text-align: center;
+}
+.shopping-cart .container table th,
+.shopping-cart .container table td {
+  border: 1px solid #E8E8E8;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #E8E8E8;
+  text-align: center;
+}
+.shopping-cart .container table th h6,
+.shopping-cart .container table td h6 {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */

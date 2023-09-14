@@ -150,13 +150,21 @@
   .nav-left {
     display: flex;
     gap: 10px;
+    overflow: hidden;
     .cart-plus {
+      position: relative;
       text-align: center;
       padding: 12px 11px 10px 10px;
       border-radius: 50%;
       border: 0px solid transparent;
+      &:hover{
+        .cart-details{
+         // left: 950px;
+        }
+       
+      }
       .cart {
-        position: relative;
+       // position: relative;
         a {
           text-decoration: none;
           i {
@@ -172,11 +180,10 @@
         z-index: 999;
         position: absolute;
         margin-top: -50px;
-        overflow: auto;
         background: #FFF;
         padding: 40px 20px;
         width: 350px;
-        margin-left: -300px;
+        right: 200px;
         transition: all 0.5s;
         .cros{
             text-align: right;
