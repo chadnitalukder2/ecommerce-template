@@ -311,8 +311,6 @@ h1 {
 }
 .nav .nav-left .cart-plus .cart-details .btn {
   margin-top: 20px;
-}
-.nav .nav-left .cart-plus .cart-details .btn button {
   outline: none;
   width: 100%;
   height: 45px;
@@ -320,15 +318,15 @@ h1 {
   transition: all 0.2s;
   border: 1px solid #212121;
 }
-.nav .nav-left .cart-plus .cart-details .btn button a {
+.nav .nav-left .cart-plus .cart-details .btn a {
   text-decoration: none;
 }
-.nav .nav-left .cart-plus .cart-details .btn button a p {
+.nav .nav-left .cart-plus .cart-details .btn a p {
   font-size: 16px;
   font-weight: 600;
   color: #fff;
 }
-.nav .nav-left .cart-plus .cart-details .btn button:hover {
+.nav .nav-left .cart-plus .cart-details .btn:hover {
   background: #be185d;
 }
 .nav .nav-left .user {
