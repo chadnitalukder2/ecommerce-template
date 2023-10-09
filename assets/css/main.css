@@ -203,14 +203,13 @@ h1 {
   overflow: hidden;
 }
 .nav .nav-left .cart-plus {
-  position: relative;
   text-align: center;
   padding: 12px 11px 10px 10px;
   border-radius: 50%;
   border: 0px solid transparent;
 }
 .nav .nav-left .cart-plus:hover .cart-details {
-  left: 950px;
+  left: 0px;
 }
 .nav .nav-left .cart-plus .cart a {
   text-decoration: none;
@@ -229,7 +228,7 @@ h1 {
   background: #FFF;
   padding: 40px 20px;
   width: 350px;
-  right: 200px;
+  left: 200px;
   transition: all 0.5s;
 }
 .nav .nav-left .cart-plus .cart-details .cros {
